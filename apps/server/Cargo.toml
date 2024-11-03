@@ -1,0 +1,17 @@
+[package]
+name = "vlr-server"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+axum = "0.7.7"
+dotenv = "0.15.0"
+lambda_http = { version = "0.13.0", optional = true }
+tokio = { version = "1", features = ["macros", "rt-multi-thread", "signal"] }
+tower-http = { version = "0.6.1", features = ["cors"] }
+serde = "1.0.214"
+thiserror = "1.0.66"
+typeshare = "1.0.4"
+
+[features]
+lambda = ["dep:lambda_http"]

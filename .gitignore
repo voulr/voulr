@@ -4,6 +4,7 @@
 **/.output
 **/.svelte-kit
 **/build
+**/target
 
 # os
 **/.DS_Store

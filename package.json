@@ -3,6 +3,7 @@
 	"private": true,
 	"scripts": {
 		"web": "pnpm --filter @vlr/web -- ",
+		"core": "pnpm --filter @vlr/server -- ",
 		"format": "prettier --write .",
 		"lint": "prettier --check . && eslint .",
 		"lint:fix": "prettier --check . && eslint . --fix"
