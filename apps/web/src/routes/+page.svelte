@@ -1,4 +1,7 @@
 <script lang="ts">
+	import { Arrow } from "$lib/components/icons/arrow"
+	import { Btn } from "$lib/components/ui/btn"
+
 	const title = "VOULR"
 	const desc = "a lambda deployment tool"
 </script>
@@ -19,5 +22,21 @@
 		<h2 class="max-w-sm text-center text-white/75 lg:text-lg">
 			Connect your repo and automatically deploy to AWS Lambda.
 		</h2>
+		<div class="flex items-center gap-2.5">
+			<Btn class="group gap-x-1.5 rounded-full transition-all duration-200 ease-in">
+				Start now
+				<Arrow />
+			</Btn>
+			<Btn
+				href="https://github.com/voulr/voulr"
+				variant="secondary"
+				rel="noopener noreferrer"
+				target="_blank"
+				class="group gap-x-1.5 rounded-full transition-all duration-200 ease-in"
+			>
+				Star on Github
+				<Arrow />
+			</Btn>
+		</div>
 	</section>
 </div>
