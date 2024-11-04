@@ -2,7 +2,7 @@
 	import { Arrow } from "$lib/components/icons/arrow"
 	import { Btn } from "$lib/components/ui/btn"
 
-	const title = "VOULR"
+	const title = "voulr"
 	const desc = "a lambda deployment tool"
 </script>
 
