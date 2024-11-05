@@ -17,6 +17,11 @@ sqlx = { version = "0.8.2", features = [
   "tls-rustls-ring",
   "postgres",
 ] }
+oauth2 = "4.4.2"
+reqwest = { version = "0.12.9", default-features = false, features = [
+  "rustls-tls",
+  "json",
+] }
 
 [features]
 lambda = ["dep:lambda_http"]
