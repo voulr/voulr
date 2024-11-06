@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="32mm"
+   height="32mm"
+   viewBox="0 0 32 32"
+   version="1.1"
+   id="svg1"
+   xml:space="preserve"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"><defs
+     id="defs1"><clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath3"><path
+         id="lpe_path-effect5"
+         style="fill:#ffffff;stroke-width:607.563;paint-order:stroke fill markers"
+         class="powerclip"
+         d="M 145,145 H 455 V 455 H 145 Z m 4,2.5 v 304.19013 l 100.00012,0.80986 -50.39821,-152.09506 z" /></clipPath></defs><g
+     id="layer1"><path
+       id="rect2"
+       style="stroke-width:5060.43;paint-order:stroke fill markers"
+       d="M 7.9374998,0 H 24.0625 A 7.9374998,7.9374998 45 0 1 32,7.9374998 V 24.0625 A 7.9374998,7.9374998 135 0 1 24.0625,32 H 7.9374998 A 7.9374998,7.9374998 45 0 1 0,24.0625 V 7.9374998 A 7.9374998,7.9374998 135 0 1 7.9374998,0 Z" /><path
+       id="rect1"
+       clip-path="url(#clipPath3)"
+       style="fill:#ffffff;stroke-width:843.198;paint-order:stroke fill markers"
+       d="m 150.00015,150.00015 v 299.99977 h 199.6891 l -48.79082,-150.40477 -49.5701,-149.595 z m 200.4999,0 v 299.99977 h 99.49987 V 150.00015 Z"
+       transform="matrix(0.05333337,0,0,0.05333337,-1.2866668e-5,-1.2866668e-5)" /></g></svg>

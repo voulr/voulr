@@ -1,9 +1,6 @@
 <script lang="ts">
-	import { Arrow } from "$lib/components/icons/arrow"
-	import { Btn } from "$lib/components/ui/btn"
-
-	const title = "voulr"
-	const desc = "a lambda deployment tool"
+	const title = "Voulr"
+	const desc = "A lambda deployment tool"
 </script>
 
 <svelte:head>
@@ -11,32 +8,3 @@
 	<meta content={title} name="title" />
 	<meta content={desc} name="description" />
 </svelte:head>
-
-<div class="pt-40 lg:pt-60">
-	<section class="flex flex-col items-center gap-6 lg:gap-8">
-		<h1
-			class="text-center text-5xl font-semibold leading-[1.1] tracking-[-1px] sm:text-6xl sm:leading-none lg:text-7xl"
-		>
-			Ship Lambda. <br class="hidden min-[450px]:flex" /> Without Headache.
-		</h1>
-		<h2 class="max-w-sm text-center text-white/75 lg:text-lg">
-			Connect your repo and automatically deploy to AWS Lambda.
-		</h2>
-		<div class="flex items-center gap-2.5">
-			<Btn class="group gap-x-1.5 rounded-full transition-all duration-200 ease-in">
-				Start now
-				<Arrow />
-			</Btn>
-			<Btn
-				href="https://github.com/voulr/voulr"
-				variant="secondary"
-				rel="noopener noreferrer"
-				target="_blank"
-				class="group gap-x-1.5 rounded-full transition-all duration-200 ease-in"
-			>
-				Star on Github
-				<Arrow />
-			</Btn>
-		</div>
-	</section>
-</div>
