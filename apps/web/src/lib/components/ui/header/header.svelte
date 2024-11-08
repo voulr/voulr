@@ -20,8 +20,8 @@
 		<DropdownMenu.Root>
 			<DropdownMenu.Trigger><Menu /></DropdownMenu.Trigger>
 			<DropdownMenu.Content class="w-52">
-				<DropdownMenu.Item>start now</DropdownMenu.Item>
-				<DropdownMenu.Item>login</DropdownMenu.Item>
+				<DropdownMenu.Item>Start now</DropdownMenu.Item>
+				<DropdownMenu.Item>Login</DropdownMenu.Item>
 			</DropdownMenu.Content>
 		</DropdownMenu.Root>
 	</div>

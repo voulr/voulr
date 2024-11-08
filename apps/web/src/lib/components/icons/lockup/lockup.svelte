@@ -9,7 +9,7 @@
 </script>
 
 <svg
-	class={cx("h-6", className)}
+	class={cx("h-5", className)}
 	fill="currentColor"
 	viewBox="0 0 2415 600"
 	xmlns="http://www.w3.org/2000/svg"
