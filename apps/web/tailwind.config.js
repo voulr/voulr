@@ -8,6 +8,7 @@ export default {
 	theme: {
 		extend: {
 			fontFamily: {
+				neue: ["Neue Montreal", ...defaultTheme.fontFamily.sans],
 				sans: ["Inter", ...defaultTheme.fontFamily.sans]
 			}
 		}

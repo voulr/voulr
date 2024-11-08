@@ -12,7 +12,5 @@
 	let { children }: $Props = $props()
 </script>
 
-<div class="container mx-auto px-6 lg:px-14">
-	<Header />
-	{@render children()}
-</div>
+<Header />
+{@render children()}

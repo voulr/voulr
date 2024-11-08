@@ -16,4 +16,17 @@
 		font-display: swap;
 		src: url(/fonts/Inter.ttf) format("truetype");
 	}
+	@font-face {
+		font-family: "Neue Montreal";
+		font-style: normal;
+		font-weight: 800;
+		font-display: swap;
+		src: url(/fonts/NeueMontreal.otf);
+	}
+}
+
+@layer components {
+	.container {
+		@apply mx-auto px-6 lg:px-10;
+	}
 }
