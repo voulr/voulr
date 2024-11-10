@@ -2,8 +2,8 @@
 	import { ArrowBtn } from "$lib/components/ui/arrow-btn"
 	import { Btn } from "$lib/components/ui/btn"
 
-	const title = "Voulr | Lambda without the headache."
-	const desc = "A Lambda deployment tool"
+	const title = "Voulr | Lambda is finally effortless."
+	const desc = "The AWS Lambda platform."
 </script>
 
 <svelte:head>
@@ -17,11 +17,11 @@
 		<div class="pt-24 xl:pt-44">
 			<div class="flex flex-col items-center gap-6 lg:gap-8">
 				<h1
-					class="text-center font-neue text-5xl leading-[1.1] tracking-[-0.9px] sm:text-6xl sm:leading-none lg:text-7xl"
+					class="text-center font-neue text-5xl leading-[1.1] sm:text-6xl sm:leading-none lg:text-7xl"
 				>
-					Lambda without the <br class="hidden min-[500px]:flex" /> headache.
+					Lambda is finally <br class="hidden min-[500px]:flex" /> effortless.
 				</h1>
-				<h2 class="max-w-md text-center text-white/75 lg:text-lg">
+				<h2 class="max-w-sm text-center text-white/75 lg:text-lg">
 					Connect your repo and automatically deploy to AWS Lambda.
 				</h2>
 				<div class="flex items-center gap-1.5">

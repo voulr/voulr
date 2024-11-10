@@ -9,35 +9,26 @@
 </script>
 
 <svg
-	class={cx("h-5", className)}
+	class={cx("h-6", className)}
 	fill="currentColor"
-	viewBox="0 0 2415 600"
+	viewBox="0 0 1724.9999 600"
 	xmlns="http://www.w3.org/2000/svg"
 >
-	<defs id="defs1">
-		<rect x="4597.4551" y="929.27283" width="4511.8643" height="917.04553" id="rect2" />
-		<clipPath clipPathUnits="userSpaceOnUse" id="clipPath4">
+	<defs id="defs1" />
+	<g id="layer1">
+		<g id="g10">
 			<path
-				id="lpe_path-effect5"
-				class="powerclip"
-				d="M 145,145 H 455 V 455 H 145 Z m 3,2.5 V 451.69014 L 248.00012,452.5 197.60191,300.40492 Z"
+				d="M 44.096385,-2.0241714e-7 H 188.6747 L 472.77108,600 H 329.63855 L 232.04819,383.85542 138.79518,600 H 0 L 164.09638,245.78313 Z"
+				id="text9"
+				style="font-weight:bold;font-size:12px;font-family:Futura;-inkscape-font-specification:'Futura, Bold';letter-spacing:-0.283574px;word-spacing:0px;white-space:pre;fill:#ffffff;stroke-width:179583;paint-order:stroke fill markers"
+				aria-label="λ"
 			/>
-		</clipPath>
-	</defs>
-	<g id="layer1" transform="translate(0,3e-5)">
-		<path
-			id="rect1"
-			clip-path="url(#clipPath4)"
-			d="M 149.99994,150 V 450.00003 H 349.18882 L 300.39826,299.59526 250.82841,150 Z m 199.99994,0 v 300.00003 h 100.0001 V 150 Z"
-			transform="matrix(2,0,0,2,-299.99988,-300.00003)"
-		/>
-		<text
-			xml:space="preserve"
-			transform="matrix(48.882682,0,0,48.882682,-223828.48,-45438.032)"
-			id="text1"
-			style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:12px;font-family:'PT Sans Caption';-inkscape-font-specification:'PT Sans Caption, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:start;writing-mode:lr-tb;direction:ltr;white-space:pre;shape-inside:url(#rect2);fill:#ffffff;stroke-width:2981.07;paint-order:stroke fill markers"
-		>
-			<tspan x="4597.4551" y="939.77344" id="tspan1">Voulr</tspan>
-		</text>
+			<path
+				style="font-weight:500;font-size:583.143px;line-height:1000;font-family:Futura;-inkscape-font-specification:'Futura, Medium';letter-spacing:-26.4583px;word-spacing:0px;fill:#ffffff;stroke-width:636.264;paint-order:stroke fill markers"
+				d="m 613.52221,253.58775 71.75392,155.75157 71.46919,-155.75157 h 72.03866 L 684.70666,549.9998 541.76829,253.58775 Z m 207.8809,136.67414 q 0,-60.07967 42.99541,-102.22087 42.99541,-42.14119 104.78351,-42.14119 62.07287,0 105.35297,42.42593 42.7107,42.42593 42.7107,104.21403 0,62.35758 -42.9954,104.49878 -43.2802,41.85645 -106.20722,41.85645 -62.35758,0 -104.49877,-42.71067 -42.1412,-42.14119 -42.1412,-105.92246 z m 65.48969,1.13895 q 0,41.57172 22.20955,65.77443 22.77903,24.48745 60.07968,24.48745 37.58537,0 60.07967,-24.20271 22.4943,-24.20271 22.4943,-64.63548 0,-40.43276 -22.4943,-64.63548 -22.779,-24.48745 -60.07967,-24.48745 -36.73118,0 -59.5102,24.48745 -22.77903,24.48745 -22.77903,63.21179 z M 1222.621,253.58775 v 159.16843 q 0,68.90654 54.3849,68.90654 54.3849,0 54.3849,-68.90654 V 253.58775 h 64.066 v 160.59212 q 0,33.31432 -8.2574,57.51703 -7.9726,21.64007 -27.6196,39.00908 -32.4601,28.18904 -82.5739,28.18904 -49.8291,0 -82.2892,-28.18904 -19.9317,-17.36901 -28.1891,-39.00908 -7.9726,-19.36217 -7.9726,-57.51703 V 253.58775 Z M 1513.9301,50.000227 V 530.92236 h -64.066 V 50.000227 Z m 54.6919,203.587523 h 64.066 v 24.77219 q 17.6538,-18.50796 31.3212,-25.34167 13.9522,-7.11844 33.0296,-7.11844 25.3416,0 52.9612,16.51479 l -29.328,58.65599 q -18.2232,-13.09794 -35.5922,-13.09794 -52.3918,0 -52.3918,79.15711 v 143.79258 h -64.066 z"
+				id="text10"
+				aria-label="voulr"
+			/>
+		</g>
 	</g>
 </svg>

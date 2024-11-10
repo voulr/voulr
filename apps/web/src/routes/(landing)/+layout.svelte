@@ -1,7 +1,7 @@
 <script lang="ts">
 	import type { Snippet } from "svelte"
 
-	import "../app.css"
+	import { Header } from "$lib/components/ui/header"
 
 	type $Props = {
 		children: Snippet
@@ -10,6 +10,5 @@
 	let { children }: $Props = $props()
 </script>
 
-<div class="scroll-smooth">
-	{@render children()}
-</div>
+<Header />
+{@render children()}
