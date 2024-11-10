@@ -25,8 +25,16 @@
 					Connect your repo and automatically deploy to AWS Lambda.
 				</h2>
 				<div class="flex items-center gap-1.5">
-					<ArrowBtn>Start now</ArrowBtn>
-					<Btn class="duration-300" variant="minimal">Login</Btn>
+					<ArrowBtn href="/waitlist">Join waitlist</ArrowBtn>
+					<Btn
+						class="duration-300"
+						variant="minimal"
+						href="https://github.com/voulr/voulr"
+						rel="noopener noreferrer"
+						target="_blank"
+					>
+						Repo
+					</Btn>
 				</div>
 			</div>
 		</div>
