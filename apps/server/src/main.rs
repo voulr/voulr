@@ -1,5 +1,4 @@
 use axum::{http::HeaderValue, routing::get, Router};
-use oauth2::{basic::BasicClient, AuthUrl, ClientId, ClientSecret, RedirectUrl, TokenUrl};
 use sqlx::{postgres::PgPoolOptions, Pool, Postgres};
 use std::{
     env::var,
@@ -17,7 +16,6 @@ const PORT: u16 = 9000;
 #[derive(Clone)]
 pub struct Ctx {
     pub db: Pool<Postgres>,
-    pub oauth: BasicClient,
 }
 
 #[tokio::main]
@@ -42,18 +40,7 @@ async fn main() -> Result<(), error::AppError> {
             .map_err(|e| error::AppError::Database(e.to_string()))?
     };
 
-    let oauth = {
-        let client_id = ClientId::new(
-            var("GH_OAUTH_CLIENT_ID")
-                .map_err(|_| error::AppError::EnvVarNotSet("GH_OAUTH_CLIENT_ID"))?,
-        );
-        let client_secret = ClientSecret::new(
-            var("GH_OAUTH_CLIENT_SECRET")
-                .map_err(|_| error::AppError::EnvVarNotSet("GH_OAUTH_CLIENT_SECRET"))?,
-        );
-    };
-
-    let ctx = Ctx { db, oauth };
+    let ctx = Ctx { db };
 
     let app = Router::new()
         .route("/", get(|| async { "voulr server!" }))
