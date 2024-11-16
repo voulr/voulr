@@ -24,9 +24,3 @@
 		src: url(/fonts/NeueMontreal.otf);
 	}
 }
-
-@layer components {
-	.container {
-		@apply mx-auto px-6 lg:px-10;
-	}
-}

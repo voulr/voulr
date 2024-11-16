@@ -12,10 +12,6 @@
 	}: WithElementRef<HTMLAttributes<HTMLDivElement>> = $props()
 </script>
 
-<div
-	bind:this={ref}
-	class={cx("bg-card text-card-foreground rounded-lg border shadow-sm", className)}
-	{...restProps}
->
+<div bind:this={ref} class={cx("rounded-lg border bg-black shadow-sm", className)} {...restProps}>
 	{@render children?.()}
 </div>
