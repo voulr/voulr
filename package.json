@@ -1,9 +1,9 @@
 {
-	"name": "@vlr/monorepo",
+	"name": "@voulr/monorepo",
 	"private": true,
 	"scripts": {
-		"web": "pnpm --filter @vlr/web -- ",
-		"core": "pnpm --filter @vlr/server -- ",
+		"web": "pnpm --filter @voulr/web -- ",
+		"core": "pnpm --filter @voulr/server -- ",
 		"format": "prettier --write .",
 		"lint": "prettier --check . && eslint .",
 		"lint:fix": "prettier --check . && eslint . --fix",

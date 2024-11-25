@@ -1,8 +1,8 @@
 {
-	"name": "@vlr/server",
+	"name": "@voulr/server",
 	"private": true,
 	"scripts": {
-		"dev": "cargo watch -x 'run -p vlr-server'",
+		"dev": "cargo watch -x 'run -p voulr-server'",
 		"dev:lambda": "cargo lambda watch"
 	}
 }

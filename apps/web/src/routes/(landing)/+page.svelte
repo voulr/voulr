@@ -2,14 +2,12 @@
 	import { ArrowBtn } from "$lib/components/ui/arrow-btn"
 	import { Btn } from "$lib/components/ui/btn"
 
-	const title = "Voulr | Lambda is finally effortless."
-	const desc = "The Lambda platform."
+	const title = "Voulr | Lambda is finally effortless"
 </script>
 
 <svelte:head>
 	<title>{title}</title>
 	<meta content={title} name="title" />
-	<meta content={desc} name="description" />
 </svelte:head>
 
 <section class="pt-24 xl:pt-44">
@@ -17,7 +15,7 @@
 		<h1
 			class="text-center font-neue text-5xl leading-[1.1] sm:text-6xl sm:leading-none lg:text-7xl"
 		>
-			Lambda is finally <br class="hidden min-[500px]:flex" /> effortless.
+			Lambda is finally <br class="hidden min-[500px]:flex" /> effortless
 		</h1>
 		<h2 class="max-w-sm text-center text-white/75 lg:text-lg">
 			Connect your repo and automatically deploy to AWS Lambda.
