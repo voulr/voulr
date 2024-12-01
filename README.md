@@ -7,6 +7,8 @@
         A Lambda platform for backend developers
     <br />
     <a href="https://voulr.com"><strong>voulr.com »</strong></a>
+    <br />
+    <br />
 </p>
 
 Voulr is an open source Lambda platform written in rust.
