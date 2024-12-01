@@ -1,5 +1,6 @@
 <script lang="ts">
 	import { Github } from "$lib/components/icons/github"
+	import { Lockup } from "$lib/components/icons/lockup"
 	import { Logomark } from "$lib/components/icons/logomark"
 	import { Menu } from "$lib/components/icons/menu/"
 	import { ArrowBtn } from "$lib/components/ui/arrow-btn"
@@ -7,9 +8,10 @@
 	import * as DropdownMenu from "$lib/components/ui/dropdown-menu"
 </script>
 
-<header class="flex h-[72px] items-center justify-between">
+<header class="relative flex h-[72px] items-center justify-between">
 	<a href="/">
-		<Logomark />
+		<Lockup class="hidden lg:flex" />
+		<Logomark class="flex lg:hidden" />
 	</a>
 	<div class="hidden items-center gap-1.5 lg:flex">
 		<ArrowBtn>Start now</ArrowBtn>
