@@ -10,7 +10,7 @@
 	<meta content={title} name="title" />
 </svelte:head>
 
-<section class="pt-24 xl:pt-44">
+<section class="py-40 lg:pt-60">
 	<div class="flex flex-col items-center gap-6 lg:gap-8">
 		<h1
 			class="text-center font-neue text-5xl leading-[1.1] sm:text-6xl sm:leading-none lg:text-7xl"
@@ -20,7 +20,7 @@
 		<h2 class="max-w-sm text-center text-white/75 lg:text-lg">
 			Connect your repo and automatically deploy to AWS Lambda.
 		</h2>
-		<div class="flex items-center gap-1.5">
+		<div class="flex items-center gap-2">
 			<ArrowBtn>Start now</ArrowBtn>
 			<Btn
 				class="duration-300"
