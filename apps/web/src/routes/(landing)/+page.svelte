@@ -2,7 +2,7 @@
 	import { ArrowBtn } from "$lib/components/ui/arrow-btn"
 	import { Btn } from "$lib/components/ui/btn"
 
-	const title = "Voulr | Lambda is finally effortless"
+	const title = "Voulr"
 </script>
 
 <svelte:head>
