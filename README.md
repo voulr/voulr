@@ -1,6 +1,6 @@
 <p align="center">
   <p align="center">
-   <img width="150" height="150" src="packages/assets/pngs/voulr-app-logo.png" alt="logo">
+   <img width="150" height="150" src="apps/web/src/lib/assets/pngs/voulr-app-logo.png" alt="logo">
   </p>
 	<h1 align="center"><b>Voulr</b></h1>
 	<p align="center">
@@ -18,5 +18,5 @@ Voulr is an open source Lambda platform written in rust.
 
 ## Credits
 
--   Design inspired by [scale](https://scale.com).
+-   Design inspired by [Scale](https://scale.com).
 -   Idea inspired by [Cloudflare Pages](https://pages.cloudflare.com) and [Cargo Lambda](https://cargo-lambda.info).
