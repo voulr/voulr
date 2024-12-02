@@ -19,5 +19,5 @@ Voulr is an open source Lambda platform written in rust.
 
 ## Credits
 
--   Design inspired by [Scale](https://scale.com).
+-   Design inspired by [Scale](https://scale.com) and [Stripe](https://stripe.com).
 -   Idea inspired by [Cloudflare Pages](https://pages.cloudflare.com) and [Cargo Lambda](https://cargo-lambda.info).

@@ -21,7 +21,7 @@
 			Connect your repo and automatically deploy to AWS Lambda.
 		</h2>
 		<div class="flex items-center gap-2">
-			<ArrowBtn>Start now</ArrowBtn>
+			<ArrowBtn variant="violet" href="/register">Start now</ArrowBtn>
 			<Btn
 				class="duration-300"
 				variant="minimal"

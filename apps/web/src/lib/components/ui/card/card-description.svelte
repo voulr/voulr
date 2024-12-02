@@ -12,6 +12,6 @@
 	}: WithElementRef<HTMLAttributes<HTMLParagraphElement>> = $props()
 </script>
 
-<p bind:this={ref} class={cx("text-sm text-white/80", className)} {...restProps}>
+<p bind:this={ref} class={cx("text-sm text-white/75", className)} {...restProps}>
 	{@render children?.()}
 </p>

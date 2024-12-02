@@ -44,7 +44,7 @@
 				</ContextMenu.Content>
 			</ContextMenu.Root>
 			<div class="hidden items-center gap-2 lg:flex">
-				<ArrowBtn>Start now</ArrowBtn>
+				<ArrowBtn variant="violet" href="/register">Start now</ArrowBtn>
 				<Btn
 					class="duration-300"
 					variant="minimal"

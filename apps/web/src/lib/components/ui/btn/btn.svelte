@@ -7,7 +7,7 @@
 		children,
 		class: className,
 		href = undefined,
-		size = "default",
+		size = "md",
 		type = "button",
 		variant = "default",
 		...restProps

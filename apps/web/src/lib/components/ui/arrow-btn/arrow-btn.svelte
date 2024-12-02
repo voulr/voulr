@@ -7,7 +7,7 @@
 	let { children, class: className, ...restProps }: BtnProps = $props()
 </script>
 
-<Btn class={cx("group gap-x-1.5", className)} {...restProps}>
+<Btn class={cx("group", className)} {...restProps}>
 	{@render children?.()}
 	<Arrow />
 </Btn>
