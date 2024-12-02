@@ -5,7 +5,7 @@
 	let {
 		class: className,
 		ref = $bindable(null),
-		sideOffset = 4,
+		sideOffset = 6,
 		...restProps
 	}: DropdownMenuPrimitive.ContentProps = $props()
 </script>
