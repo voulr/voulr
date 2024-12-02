@@ -1,27 +1,14 @@
 use axum::{http::HeaderValue, routing::get, Router};
-use sqlx::{postgres::PgPoolOptions, Pool, Postgres};
-use std::{
-    env::var,
-    net::{IpAddr, Ipv4Addr, SocketAddr},
-    time::Duration,
-};
+use std::{net::SocketAddr, time::Duration};
 use tower_http::cors::{Any, CorsLayer};
 
-mod error;
 mod routes;
 
 const MAX_AGE: u64 = 300; // 5 min
 const PORT: u16 = 9000;
 
-#[derive(Clone)]
-pub struct Ctx {
-    pub db: Pool<Postgres>,
-}
-
 #[tokio::main]
-async fn main() -> Result<(), error::AppError> {
-    dotenv::dotenv().ok();
-
+async fn main() {
     let cors = CorsLayer::new()
         .allow_origin([
             "http://localhost:5173".parse::<HeaderValue>().unwrap(),
@@ -31,57 +18,38 @@ async fn main() -> Result<(), error::AppError> {
         .allow_headers(Any)
         .max_age(Duration::from_secs(MAX_AGE));
 
-    let db = {
-        let url = var("DATABASE_URL").map_err(|_| error::AppError::EnvVarNotSet("DATABASE_URL"))?;
-        PgPoolOptions::new()
-            .max_connections(5)
-            .connect(&url)
-            .await
-            .map_err(|e| error::AppError::Database(e.to_string()))?
-    };
-
-    let ctx = Ctx { db };
-
     let app = Router::new()
         .route("/", get(|| async { "voulr server!" }))
         .route("/health", get(|| async { "ok" }))
-        .layer(cors)
-        .with_state(ctx);
+        .route("/logos", get(routes::logos::mount))
+        .layer(cors);
 
-    let addr = SocketAddr::new(IpAddr::V4(Ipv4Addr::LOCALHOST), PORT);
+    let addr = SocketAddr::from(([127, 0, 0, 1], PORT));
     println!("\nlistening on http://{}\n", addr);
 
     cfg_if::cfg_if! {
         if #[cfg(feature = "lambda")] {
-            bind_lambda(app).await?;
+            bind_lambda(app).await;
         } else {
-            bind(app, addr).await?;
+            bind(app, addr).await;
         }
     }
-
-    Ok(())
 }
 
 #[cfg(feature = "lambda")]
-async fn bind_lambda(app: Router) -> Result<(), error::AppError> {
+async fn bind_lambda(app: Router) {
     lambda_http::tracing::init_default_subscriber();
-    lambda_http::run(app).await.expect("failed start lambda");
-    Ok(())
+    lambda_http::run(app).await.unwrap();
 }
 
 #[cfg(not(feature = "lambda"))]
-async fn bind(app: Router, addr: SocketAddr) -> Result<(), error::AppError> {
-    let listener = tokio::net::TcpListener::bind(&addr)
-        .await
-        .map_err(|e| error::AppError::Internal(e.to_string()))?;
+async fn bind(app: Router, addr: SocketAddr) {
+    let listener = tokio::net::TcpListener::bind(&addr).await.unwrap();
     axum::serve(listener, app)
         .with_graceful_shutdown(async {
-            tokio::signal::ctrl_c()
-                .await
-                .expect("failed to install ctrl+c handler");
+            tokio::signal::ctrl_c().await.unwrap();
             println!("\nshutting down gracefully...\n");
         })
         .await
-        .map_err(|e| error::AppError::Server(e.to_string()))?;
-    Ok(())
+        .unwrap();
 }

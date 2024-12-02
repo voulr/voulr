@@ -11,6 +11,7 @@
 	import { Btn } from "$lib/components/ui/btn"
 	import * as ContextMenu from "$lib/components/ui/context-menu"
 	import * as DropdownMenu from "$lib/components/ui/dropdown-menu"
+	import { apiUrl } from "$lib/utils/urls"
 </script>
 
 <header class="fixed left-0 z-50 w-full bg-black/10 backdrop-blur-lg">
@@ -31,6 +32,14 @@
 					<ContextMenu.Item onclick={() => navigator.clipboard.writeText(lockupRaw)}>
 						<T class="size-4" />
 						Copy lockup as SVG
+					</ContextMenu.Item>
+					<ContextMenu.Item>
+						{#snippet child({ props })}
+							<a href={`${apiUrl().origin}/logos`} {...props}>
+								<Download class="size-4" />
+								Download logos
+							</a>
+						{/snippet}
 					</ContextMenu.Item>
 				</ContextMenu.Content>
 			</ContextMenu.Root>
