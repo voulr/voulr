@@ -21,7 +21,6 @@ async fn main() {
     let app = Router::new()
         .route("/", get(|| async { "voulr server!" }))
         .route("/health", get(|| async { "ok" }))
-        .route("/logos", get(routes::logos::mount))
         .layer(cors);
 
     let addr = SocketAddr::from(([127, 0, 0, 1], PORT));

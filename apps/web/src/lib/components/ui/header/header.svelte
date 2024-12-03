@@ -1,7 +1,6 @@
 <script lang="ts">
 	import lockupRaw from "$lib/assets/svgs/voulr-lockup.svg?raw"
 	import logomarkRaw from "$lib/assets/svgs/voulr-logomark.svg?raw"
-	import { Download } from "$lib/components/icons/download"
 	import { Github } from "$lib/components/icons/github"
 	import { Lockup } from "$lib/components/icons/lockup"
 	import { Logomark } from "$lib/components/icons/logomark"
@@ -11,7 +10,6 @@
 	import { Btn } from "$lib/components/ui/btn"
 	import * as ContextMenu from "$lib/components/ui/context-menu"
 	import * as DropdownMenu from "$lib/components/ui/dropdown-menu"
-	import { apiUrl } from "$lib/utils/urls"
 </script>
 
 <header class="fixed left-0 z-50 w-full bg-black/10 backdrop-blur-lg">
@@ -32,14 +30,6 @@
 					<ContextMenu.Item onclick={() => navigator.clipboard.writeText(lockupRaw)}>
 						<T class="size-4" />
 						Copy lockup as SVG
-					</ContextMenu.Item>
-					<ContextMenu.Item>
-						{#snippet child({ props })}
-							<a href={`${apiUrl().origin}/logos`} {...props}>
-								<Download class="size-4" />
-								Download logos
-							</a>
-						{/snippet}
 					</ContextMenu.Item>
 				</ContextMenu.Content>
 			</ContextMenu.Root>
