@@ -7,11 +7,13 @@
 	import { Input } from "$lib/components/ui/input"
 
 	const title = "Register | Voulr"
+	const desc = "Create your Voulr account to get started deploying to AWS Lambda"
 </script>
 
 <svelte:head>
 	<title>{title}</title>
 	<meta content={title} name="title" />
+	<meta content={desc} name="description" />
 </svelte:head>
 
 <main class="py-8 sm:pt-16">

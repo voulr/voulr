@@ -3,11 +3,13 @@
 	import { Btn } from "$lib/components/ui/btn"
 
 	const title = "Voulr"
+	const desc = "A Lambda platform for backend developers"
 </script>
 
 <svelte:head>
 	<title>{title}</title>
 	<meta content={title} name="title" />
+	<meta content={desc} name="description" />
 </svelte:head>
 
 <section class="py-40 lg:pt-60">
