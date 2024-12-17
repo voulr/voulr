@@ -2,13 +2,9 @@
 	"name": "@voulr/monorepo",
 	"private": true,
 	"scripts": {
-		"web": "pnpm --filter @voulr/web -- ",
-		"core": "pnpm --filter @voulr/server -- ",
 		"format": "prettier --write .",
 		"lint": "prettier --check . && eslint .",
-		"lint:fix": "prettier --check . && eslint . --fix",
-		"migrate:add": "cd apps/server && sqlx migrate add schema",
-		"migrate:run": "cd apps/server && sqlx migrate run"
+		"lint:fix": "prettier --check . && eslint . --fix"
 	},
 	"devDependencies": {
 		"@types/eslint": "^9.6.0",
