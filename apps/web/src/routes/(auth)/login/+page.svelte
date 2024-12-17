@@ -5,6 +5,7 @@
 	import { Btn } from "$lib/components/ui/btn"
 	import * as Card from "$lib/components/ui/card"
 	import { Input } from "$lib/components/ui/input"
+	import { githubLoginUrl } from "$lib/utils/constants"
 
 	const title = "Login | Voulr"
 	const desc = "Sign in to the Voulr Dashboard to manage your Lambda deployments"
@@ -49,7 +50,12 @@
 							<hr class="h-px w-full border-0 bg-white/15" />
 						</div>
 						<div class="flex gap-4">
-							<Btn size="lg" variant="outline" class="w-full">
+							<Btn
+								href={githubLoginUrl.toString()}
+								size="lg"
+								variant="outline"
+								class="w-full"
+							>
 								<Github />
 								GitHub
 							</Btn>
